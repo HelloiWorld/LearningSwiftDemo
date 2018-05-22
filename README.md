@@ -6,5 +6,5 @@
 * 2018-5-9：提交以前的[语法糖练习playground](https://github.com/HelloiWorld/LearningSwiftDemo/tree/master/SyntacticSugar)
 * 2018-5-22：提交[FaceIt](https://github.com/HelloiWorld/LearningSwiftDemo/tree/master/FaceIt)
 	
-	![face](https://github.com/HelloiWorld/LearningSwiftDemo/blob/master/FaceIt/Screenshots/face.jpg)
+	![face](https://github.com/HelloiWorld/LearningSwiftDemo/blob/master/FaceIt/Screenshots/face.png)
 	![peiqi](https://github.com/HelloiWorld/LearningSwiftDemo/blob/master/FaceIt/Screenshots/peiqi.png)
