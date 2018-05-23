@@ -10,20 +10,45 @@ import UIKit
 
 @IBDesignable
 class FaceView: UIView {
-    @IBInspectable
-    var scale : CGFloat = 0.9
+    // Public APIs
     
     @IBInspectable
-    var eyesOpen : Bool = false
+    var scale : CGFloat = 0.9 { didSet { setNeedsDisplay() } }
     
     @IBInspectable
-    var mouthCurvature : Double = 0.5 // 1.0 is full smile and -1.0 is full frown
+    var eyesOpen : Bool = false { didSet { setNeedsDisplay() } }
     
     @IBInspectable
-    var lineWidth : CGFloat = 5.0
+    // 1.0 is full smile and -1.0 is full frown
+    var mouthCurvature : Double = 0.5 { didSet { setNeedsDisplay() } }
     
     @IBInspectable
-    var color : UIColor = UIColor.blue
+    var lineWidth : CGFloat = 5.0 { didSet { setNeedsDisplay() } }
+    
+    @IBInspectable
+    var color : UIColor = UIColor.blue { didSet { setNeedsDisplay() } }
+    
+    @objc func changeScale(byReactingTo pinchRecognizer: UIPinchGestureRecognizer) {
+        switch pinchRecognizer.state {
+        case .changed,.ended:
+            scale *= pinchRecognizer.scale
+            print("scale = \(scale)")
+            pinchRecognizer.scale = 1
+        default:
+            break
+        }
+    }
+    
+    
+    // Private Implementations
+    
+    private struct Ratios {
+        static let skullRadiusToEyeOffset: CGFloat = 3
+        static let skullRadiusToEyeRadius: CGFloat = 10
+        static let skullRadiusToMouthWidth: CGFloat = 1
+        static let skullRadiusToMouthHeight: CGFloat = 3
+        static let skullRadiusToMouthOffset: CGFloat = 3
+    }
     
     private var skullRadius: CGFloat {
         return min(bounds.size.width, bounds.size.height) / 2 * scale
@@ -107,14 +132,6 @@ class FaceView: UIView {
         pathForEye(.left).stroke()
         pathForEye(.right).stroke()
         pathForMouth().stroke()
-    }
-    
-    private struct Ratios {
-        static let skullRadiusToEyeOffset: CGFloat = 3
-        static let skullRadiusToEyeRadius: CGFloat = 10
-        static let skullRadiusToMouthWidth: CGFloat = 1
-        static let skullRadiusToMouthHeight: CGFloat = 3
-        static let skullRadiusToMouthOffset: CGFloat = 3
     }
 
 }
