@@ -8,3 +8,5 @@
 	
 	![face](https://github.com/HelloiWorld/LearningSwiftDemo/blob/master/FaceIt/Screenshots/face.png)
 	![peiqi](https://github.com/HelloiWorld/LearningSwiftDemo/blob/master/FaceIt/Screenshots/peiqi.png)
+	
+* 2018-6-5：更新[FaceIt](https://github.com/HelloiWorld/LearningSwiftDemo/tree/master/FaceIt)，支持横屏分栏显示

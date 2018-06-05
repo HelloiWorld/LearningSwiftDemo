@@ -8,11 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		3D2C723B20AED90F00CD19AD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2C723A20AED90F00CD19AD /* AppDelegate.swift */; };
-		3D2C723D20AED90F00CD19AD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2C723C20AED90F00CD19AD /* ViewController.swift */; };
+		3D2C723D20AED90F00CD19AD /* FaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2C723C20AED90F00CD19AD /* FaceViewController.swift */; };
 		3D2C724020AED90F00CD19AD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D2C723E20AED90F00CD19AD /* Main.storyboard */; };
 		3D2C724220AED90F00CD19AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D2C724120AED90F00CD19AD /* Assets.xcassets */; };
 		3D2C724520AED90F00CD19AD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D2C724320AED90F00CD19AD /* LaunchScreen.storyboard */; };
 		3D6F590620B51D0E002B5193 /* FacialExpression.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6F590520B51D0E002B5193 /* FacialExpression.swift */; };
+		3D79F7C320C66E2A00C8A0EB /* EmotionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D79F7C220C66E2A00C8A0EB /* EmotionsViewController.swift */; };
 		3DCA22D120B29BA200A0D0A0 /* FaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DCA22D020B29BA200A0D0A0 /* FaceView.swift */; };
 		3DCA22D320B2AF2300A0D0A0 /* PeiqiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DCA22D220B2AF2300A0D0A0 /* PeiqiView.swift */; };
 /* End PBXBuildFile section */
@@ -20,7 +21,7 @@
 /* Begin PBXFileReference section */
 		3D2C723720AED90F00CD19AD /* FaceIt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FaceIt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D2C723A20AED90F00CD19AD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3D2C723C20AED90F00CD19AD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3D2C723C20AED90F00CD19AD /* FaceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceViewController.swift; sourceTree = "<group>"; };
 		3D2C723F20AED90F00CD19AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3D2C724120AED90F00CD19AD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3D2C724420AED90F00CD19AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -28,6 +29,7 @@
 		3D63C4EA20B3BD6A002C3996 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		3D63C4EC20B3C491002C3996 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
 		3D6F590520B51D0E002B5193 /* FacialExpression.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacialExpression.swift; sourceTree = "<group>"; };
+		3D79F7C220C66E2A00C8A0EB /* EmotionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmotionsViewController.swift; sourceTree = "<group>"; };
 		3DCA22D020B29BA200A0D0A0 /* FaceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceView.swift; sourceTree = "<group>"; };
 		3DCA22D220B2AF2300A0D0A0 /* PeiqiView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeiqiView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -63,7 +65,8 @@
 		3D2C723920AED90F00CD19AD /* FaceIt */ = {
 			isa = PBXGroup;
 			children = (
-				3D2C723C20AED90F00CD19AD /* ViewController.swift */,
+				3D79F7C220C66E2A00C8A0EB /* EmotionsViewController.swift */,
+				3D2C723C20AED90F00CD19AD /* FaceViewController.swift */,
 				3DCA22D020B29BA200A0D0A0 /* FaceView.swift */,
 				3D6F590520B51D0E002B5193 /* FacialExpression.swift */,
 				3DCA22D220B2AF2300A0D0A0 /* PeiqiView.swift */,
@@ -164,8 +167,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3D2C723D20AED90F00CD19AD /* ViewController.swift in Sources */,
+				3D2C723D20AED90F00CD19AD /* FaceViewController.swift in Sources */,
 				3DCA22D320B2AF2300A0D0A0 /* PeiqiView.swift in Sources */,
+				3D79F7C320C66E2A00C8A0EB /* EmotionsViewController.swift in Sources */,
 				3D6F590620B51D0E002B5193 /* FacialExpression.swift in Sources */,
 				3D2C723B20AED90F00CD19AD /* AppDelegate.swift in Sources */,
 				3DCA22D120B29BA200A0D0A0 /* FaceView.swift in Sources */,
